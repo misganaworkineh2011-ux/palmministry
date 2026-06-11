@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creation Care | PALM Ministry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="../assets/images/logo.png" type="image/png">
+</head>
+<body data-page="sector-creation">
+
+  <header class="site-header" id="site-header"></header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Creation Care</div>
+      <h1 data-i18n="cc_title">Creation Care & Environmental Peacebuilding</h1>
+      <p class="amharic-title">የፍጥረት እንክብካቤና የአካባቢ ጥበቃ</p>
+      <p class="subtitle" data-i18n="cc_focus">Connecting faith with environmental stewardship to alleviate resource-driven community conflicts.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="cards-grid" style="margin-bottom:3rem;">
+        <div class="card">
+          <div class="card-icon">🌳</div>
+          <p data-i18n="cc_action1">Large-scale tree-planting campaigns fully supporting Ethiopia's National Green Legacy initiatives.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📢</div>
+          <p data-i18n="cc_action2">Eco-advocacy and community education on sustainable resource management.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <p data-i18n="cc_action3">Mobilizing youth to care for local ecosystems and build environmental consciousness.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="form-section">
+          <h3 style="margin-bottom:1.5rem;" data-i18n="cc_volunteer">Volunteer for Next Green Day</h3>
+          <form data-form="volunteer">
+            <div class="form-group">
+              <label data-i18n="mem_name">Full Name</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="mem_email">Email Address</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="mem_phone">Phone Number</label>
+              <input type="tel" name="phone" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="submit">Submit</button>
+          </form>
+          <div class="success-message form-success">
+            <h3>Thank You!</h3>
+            <p>You've been registered for our next Green Day event. We'll contact you with details.</p>
+          </div>
+        </div>
+        <div class="form-section">
+          <h3 style="margin-bottom:1.5rem;" data-i18n="cc_sponsor">Sponsor a Seedling / Tool Kit</h3>
+          <form data-form="sponsor">
+            <div class="form-group">
+              <label data-i18n="mem_name">Full Name</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>Sponsorship Type</label>
+              <select name="type">
+                <option value="seedling">Seedling (50 ETB)</option>
+                <option value="toolkit">Tool Kit (500 ETB)</option>
+                <option value="campaign">Full Campaign Support</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="sup_amount">Donation Amount (ETB)</label>
+              <input type="number" name="amount" min="50" placeholder="50">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="sup_donate">Proceed to Donate</button>
+          </form>
+          <div class="success-message form-success">
+            <h3>Thank You!</h3>
+            <p>Your sponsorship request has been received. You'll be redirected to payment shortly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advocacy for the Abused | PALM Ministry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="../assets/images/logo.png" type="image/png">
+</head>
+<body data-page="sector-advocacy">
+
+  <header class="site-header" id="site-header"></header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Advocacy for the Abused</div>
+      <h1 data-i18n="adv_title">Advocacy for the Abused in Religious Institutions</h1>
+      <p class="amharic-title">በሃይማኖት ተቋማት ውስጥ ለተበደሉ ወገኖች ጥበቃና ድምፅ መሆን</p>
+      <p class="subtitle" data-i18n="adv_focus">A highly confidential, professional, and compassionate system for individuals recovering from administrative oversight, spiritual trauma, or institutional abuse.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Strategic Framework</h2>
+      </div>
+      <ul class="feature-list" style="max-width:800px;margin:0 auto 3rem;">
+        <li>
+          <span class="feature-num">1</span>
+          <div>
+            <h3 data-i18n="adv_policy">Policy Advocacy</h3>
+            <p style="color:var(--text-muted);" data-i18n="adv_policy_desc">Partnering with legal experts, regulatory bodies, and the Inter-Religious Council of Ethiopian Evangelical Churches to improve safety policies.</p>
+          </div>
+        </li>
+        <li>
+          <span class="feature-num">2</span>
+          <div>
+            <h3 data-i18n="adv_trauma">Trauma-Informed Rehabilitation</h3>
+            <p style="color:var(--text-muted);" data-i18n="adv_trauma_desc">Providing a safe environment for psychological and emotional recovery with trained counselors and pastoral care.</p>
+          </div>
+        </li>
+        <li>
+          <span class="feature-num">3</span>
+          <div>
+            <h3 data-i18n="adv_shame">Breaking the "Shame Culture"</h3>
+            <p style="color:var(--text-muted);" data-i18n="adv_shame_desc">Fostering honest institutional dialogue over harmful silence that enables continued abuse.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="callout callout-secure" style="max-width:700px;margin:0 auto;">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">🔒</div>
+        <h3 style="color:var(--accent);margin-bottom:1rem;">Secure, Encrypted Help Portal</h3>
+        <p style="font-size:1rem;font-style:normal;margin-bottom:1.5rem;opacity:0.9;" data-i18n="adv_secure">Your privacy is our utmost priority. All messages sent through this channel are encrypted and handled directly by trusted executive counseling leadership.</p>
+        <button class="btn btn-primary" data-modal="support-modal" data-i18n="adv_btn">Request Support / Reach Out Confidentially</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="support-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 data-i18n="secure_form">Secure & Encrypted Form</h3>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="secure-badge">🔒 End-to-End Encrypted</div>
+      <form data-form="support">
+        <div class="form-group">
+          <label data-i18n="mem_name">Full Name</label>
+          <input type="text" name="name" required placeholder="Optional — you may remain anonymous">
+        </div>
+        <div class="form-group">
+          <label>Preferred Contact Method</label>
+          <select name="contact">
+            <option value="email">Secure Email</option>
+            <option value="phone">Phone (Encrypted)</option>
+            <option value="anonymous">Anonymous Only</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="subject">Subject</label>
+          <input type="text" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label data-i18n="message">Your Message</label>
+          <textarea name="message" rows="5" required placeholder="Share as much or as little as you are comfortable with..."></textarea>
+        </div>
+        <p class="form-note secure">🔒 Your message is encrypted and routed directly to executive counseling leadership.</p>
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:1rem;" data-i18n="submit">Submit</button>
+      </form>
+      <div class="success-message form-success">
+        <h3>Message Received</h3>
+        <p>Your confidential message has been securely received. A trusted member of our counseling leadership team will respond within 48 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

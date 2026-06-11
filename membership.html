@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership | PALM Ministry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body data-page="membership">
+
+  <header class="site-header" id="site-header"></header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Membership</div>
+      <h1 data-i18n="mem_title">Online Membership Application</h1>
+      <p class="amharic-title">አባልነት</p>
+      <p class="subtitle" data-i18n="mem_subtitle">Join PALM in advancing peace, justice, and transformational leadership.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container" style="max-width:720px;">
+      <div id="membership-wizard">
+        <div class="wizard-steps">
+          <div class="wizard-step active">
+            <span class="step-num">1</span>
+            <span data-i18n="mem_step1">Qualifications</span>
+          </div>
+          <div class="wizard-step">
+            <span class="step-num">2</span>
+            <span data-i18n="mem_step2">Covenant Alignment</span>
+          </div>
+          <div class="wizard-step">
+            <span class="step-num">3</span>
+            <span data-i18n="mem_step3">Asset & Skills</span>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <!-- Step 1 -->
+          <div class="wizard-panel active">
+            <div class="form-group">
+              <label data-i18n="mem_name">Full Name</label>
+              <input type="text" id="mem-name" name="name" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="mem_email">Email Address</label>
+                <input type="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label data-i18n="mem_phone">Phone Number</label>
+                <input type="tel" name="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="mem_dob">Date of Birth</label>
+              <input type="date" id="mem-dob" name="dob" required>
+              <p class="form-note" data-i18n="mem_age_note">Must be 18 years or older (Article 16)</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="wizard-panel">
+            <div class="form-group">
+              <label data-i18n="mem_covenant_q">Do you fully subscribe to the Sound Christian Doctrine (Article 5) and the core vision of PALM?</label>
+              <div class="checkbox-group" style="margin-top:1rem;">
+                <label class="checkbox-item">
+                  <input type="radio" name="covenant" value="yes" required>
+                  <span data-i18n="mem_yes">Yes, I fully subscribe</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="radio" name="covenant" value="no">
+                  <span data-i18n="mem_no">No</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="wizard-panel">
+            <div class="form-group">
+              <label data-i18n="mem_skills">How will you support the ministry? (Select all that apply)</label>
+              <div class="checkbox-group" style="margin-top:1rem;">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="skills" value="professional">
+                  <span data-i18n="mem_skill1">Professional Skills (Legal, Counseling, IT, Writing, etc.)</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="skills" value="financial">
+                  <span data-i18n="mem_skill2">Financial Contributions / Membership Dues</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="skills" value="academic">
+                  <span data-i18n="mem_skill3">Academic / Research Support</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="skills" value="labor">
+                  <span data-i18n="mem_skill4">Voluntary Physical Labor</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="wizard-nav">
+            <button type="button" class="btn btn-secondary btn-sm" id="wizard-back" style="visibility:hidden;" data-i18n="mem_back">Back</button>
+            <button type="button" class="btn btn-primary btn-sm" id="wizard-next" data-i18n="mem_next">Continue</button>
+            <button type="button" class="btn btn-primary btn-sm" id="wizard-submit" style="display:none;" data-i18n="mem_submit">Submit Application</button>
+          </div>
+        </div>
+
+        <div class="success-message">
+          <div style="font-size:3rem;margin-bottom:1rem;">✓</div>
+          <h3 data-i18n="mem_success">Thank you. Your application has been successfully queued for evaluation by the Board of Directors under Article 16, Clause 5.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

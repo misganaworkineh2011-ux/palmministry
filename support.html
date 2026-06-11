@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Us | PALM Ministry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body data-page="support">
+
+  <header class="site-header" id="site-header"></header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Support Us</div>
+      <h1 data-i18n="sup_title">Support Us / Financial Partners</h1>
+      <p class="amharic-title">የበጀት ምንጭ</p>
+      <p class="subtitle" data-i18n="sup_subtitle">Transparency in funding as mandated by Article 10 of our constitution.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container" style="max-width:800px;">
+      <div class="form-section">
+        <form data-form="donation" id="donation-form">
+          <div class="form-group">
+            <label data-i18n="mem_name">Full Name</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="mem_email">Email Address</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="sup_amount">Donation Amount (ETB)</label>
+              <input type="number" name="amount" min="10" placeholder="100" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="sup_buckets">Where would you like your funds to go?</label>
+            <div class="donation-buckets">
+              <label class="bucket-item">
+                <input type="checkbox" name="bucket" value="general">
+                <span data-i18n="sup_bucket1">General Ministry & Missionary Fund</span>
+              </label>
+              <label class="bucket-item">
+                <input type="checkbox" name="bucket" value="football">
+                <span data-i18n="sup_bucket2">Football Team Kits & Youth Gear</span>
+              </label>
+              <label class="bucket-item">
+                <input type="checkbox" name="bucket" value="trauma">
+                <span data-i18n="sup_bucket3">Trauma Rehabilitation & Legal Advocacy Support</span>
+              </label>
+              <label class="bucket-item">
+                <input type="checkbox" name="bucket" value="environment">
+                <span data-i18n="sup_bucket4">Environmental Seedlings & Tools</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Payment Route</label>
+            <select name="payment_route" id="payment-route">
+              <option value="local">Local Payment (Ethiopia)</option>
+              <option value="international">International Payment</option>
+            </select>
+          </div>
+
+          <div class="payment-methods">
+            <div class="payment-card" id="local-payments">
+              <h4>🇪🇹 <span data-i18n="sup_local">Local Payments (Ethiopia)</span></h4>
+              <p style="color:var(--text-muted);font-size:0.9rem;" data-i18n="sup_local_desc">Pay securely via Chapa, Telebirr, or major Ethiopian commercial banks.</p>
+              <div class="payment-logos">
+                <span class="payment-logo">Chapa</span>
+                <span class="payment-logo">Telebirr</span>
+                <span class="payment-logo">CBE</span>
+                <span class="payment-logo">Awash Bank</span>
+                <span class="payment-logo">Dashen Bank</span>
+              </div>
+            </div>
+            <div class="payment-card" id="intl-payments">
+              <h4>🌍 <span data-i18n="sup_intl">International Payments</span></h4>
+              <p style="color:var(--text-muted);font-size:0.9rem;" data-i18n="sup_intl_desc">Secure Stripe or PayPal links for our global diaspora network.</p>
+              <div class="payment-logos">
+                <span class="payment-logo">Stripe</span>
+                <span class="payment-logo">PayPal</span>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:2rem;" data-i18n="sup_donate">Proceed to Donate</button>
+        </form>
+
+        <div class="success-message form-success">
+          <div style="font-size:3rem;margin-bottom:1rem;">🙏</div>
+          <h3>Thank You for Your Generosity!</h3>
+          <p>Your donation request has been received. You will be redirected to the secure payment gateway momentarily.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

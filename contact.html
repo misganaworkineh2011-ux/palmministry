@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | PALM Ministry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body data-page="contact">
+
+  <header class="site-header" id="site-header"></header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <h1 data-i18n="contact_title">Contact Us</h1>
+      <p class="amharic-title">ያግኙን</p>
+      <p class="subtitle" data-i18n="contact_subtitle">We'd love to hear from you. Reach out for partnerships, media inquiries, or general questions.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-card reveal">
+          <h3 data-i18n="footer_contact">Contact Information</h3>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p data-i18n="footer_address">Addis Ababa, Ethiopia</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@palmministry.org">info@palmministry.org</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+251 11 XXX XXXX</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🔒</div>
+            <div>
+              <h4>Confidential Support</h4>
+              <p><a href="sectors/advocacy-abused.html">Secure advocacy portal →</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-section reveal">
+          <h3 style="margin-bottom:1.5rem;" data-i18n="contact_us">Send Us a Message</h3>
+          <form data-form="contact">
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="mem_name">Full Name</label>
+                <input type="text" name="name" required>
+              </div>
+              <div class="form-group">
+                <label data-i18n="mem_email">Email Address</label>
+                <input type="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Inquiry Type</label>
+              <select name="type">
+                <option>General Inquiry</option>
+                <option>Partnership / Donor Relations</option>
+                <option>Media & Press</option>
+                <option>Training & Events</option>
+                <option>Volunteer Interest</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="subject">Subject</label>
+              <input type="text" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="message">Your Message</label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="submit">Submit</button>
+          </form>
+          <div class="success-message form-success">
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. Our team will respond within 2–3 business days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
